@@ -2,7 +2,7 @@
   "name": "qbittorrent-to-rclone-heroku",
   "description": "qbittorrent-to-rclone-heroku",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/6/66/New_qBittorrent_Logo.svg",
-  "keywords": ["qbit", "notebook", "heroku", "web", "herokuweb", "safe", "nopassword", "password-disabled", "no-password", "oneclickdeploy", "deploy-to-heroku", "docker"],
+  "keywords": ["qbittorrent-nox", "qbittorrent", "heroku", "web", "herokuweb", "safe", "password", "password", "no-password", "oneclickdeploy", "deploy-to-heroku", "docker"],
 
   "website": "",
   "repository": "",
