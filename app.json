@@ -1,7 +1,7 @@
 {
   "name": "qbittorrent-to-rclone-heroku",
   "description": "qbittorrent-to-rclone-heroku",
-  "logo": "https://raw.githubusercontent.com/developeranaz/Jupyter-Notebook-Server-Heroku/main/logo/Jupyter_logo.svg.png",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/6/66/New_qBittorrent_Logo.svg",
   "keywords": ["qbit", "notebook", "heroku", "web", "herokuweb", "safe", "nopassword", "password-disabled", "no-password", "oneclickdeploy", "deploy-to-heroku", "docker"],
 
   "website": "",
