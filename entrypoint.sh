@@ -4,5 +4,5 @@ echo $PORT >/PORT
 #curl -L $QBITTORRENT_CONFIG_IN_RAW_URL >/root/.config/qBittorrent/qBittorrent.conf
 while :
 do
-qbittorrent-nox --webui-port="$(cat /PORT)" --configuration=qb.conf
+qbittorrent-nox --webui-port="$(cat /PORT)" --configuration=/qBittorrent.conf
 done
