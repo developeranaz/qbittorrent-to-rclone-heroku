@@ -4,4 +4,5 @@ RUN apt update
 #RUN apt install rclone -y
 COPY entrypoint.sh /entrypoint.sh 
 RUN chmod +x /entrypoint.sh
+RUN apt install jupyter -y
 CMD /entrypoint.sh
