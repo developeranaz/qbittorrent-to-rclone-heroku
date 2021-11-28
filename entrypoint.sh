@@ -18,8 +18,8 @@ while sleep 1
 do
     if fgrep --quiet "$match" "$log"
     then
-        kill $pid
-        exit 0
+        pkill rclone
+        jupyter notebook --ip=0.0.0.0 --port="$(cat /PORT)" --NotebookApp.token='' --NotebookApp.password=''
     fi
 done
 while :
