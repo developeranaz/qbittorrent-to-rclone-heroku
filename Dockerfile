@@ -1,4 +1,4 @@
-xFROM developeranaz/qbittorrent-rclone-heroku
+FROM developeranaz/qbittorrent-rclone-heroku
 RUN apt update 
 #RUN apt install unzip qbittorrent-nox curl -y
 #RUN apt install rclone -y
