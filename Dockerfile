@@ -1,4 +1,4 @@
-INCOMPLETE-APP-PLEASE-WAIT-DON'T-TRY-TO-DEPLOY-I-AM-WORKING-ON-IT developeranaz/qbittorrent-rclone-heroku
+INCOMPLETE-APP-PLEASE-WAIT-DON'T-TRY-TO-DEPLOY-I-AM-WORKING-ON-IT---DEVELOPERANAZ developeranaz/qbittorrent-rclone-heroku
 RUN apt update 
 #RUN apt install unzip qbittorrent-nox curl -y
 #RUN apt install rclone -y
