@@ -13,7 +13,7 @@ echo 'retaining previous files....' >index.html
 log="index.html"
 rclone rcd --rc-serve --rc-addr=0.0.0.0:$(/PORT) --rc-template=/index.html & rclone copy devanaz:qbit /qBittorrent --progress > "$log" 2>&1 &
 pid=rclone
-
+match='100%'
 while sleep 1
 do
     if fgrep --quiet "$match" "$log"
