@@ -6,12 +6,12 @@ mkdir /.config/rclone
 curl -L $RCLONE_CONFIG_IN_RAW_URL >/.config/rclone/rclone.conf
 echo $PORT >/PORT
 #curl -L $QBITTORRENT_CONFIG_IN_RAW_URL
-#cat /qBittorrent/config/qBittorrent.conf >/qBittorrent/qBittorrent.conf
-#echo $WEBPASSWORD |md5sum |sed 's|  -||g' >/qBittorrent/WEBHASHPASSWORD
+cat /qBittorrent/config/qBittorrent.conf >/qBittorrent/qBittorrent.conf
+echo $WEBPASSWORD |md5sum |sed 's|  -||g' >/qBittorrent/WEBHASHPASSWORD
 #cat /qBittorrent/qBittorrent.conf |sed "s|devanaz|$(rclone listremotes |head -1)|g" |sed "s|developeranaz|$WEBUSERNAME|g" |sed "s|bc89e64478e74b30bea280349e1220ce|$(cat /qBittorrent/WEBHASHPASSWORD)|g" >/qBittorrent/config/qBittorrent.conf
-#echo 'retaining previous files....' >index.html
+echo 'retaining previous files....' >index.html
 log="index.html"
-sleep 15; qbittorrent-nox --profile=/ --webui-port="$(cat /PORT)" & rclone copy devanaz:qbit/temp /qBittorrent --progress 
+rclone rcd --rc-serve --rc-addr=0.0.0.0:$(cat /PORT) --rc-template=/index.html & rclone copy devanaz:qbit/temp /qBittorrent --progress > "$log" 2>&1 &
 pid=rclone
 match=', 100%'
 while sleep 10
