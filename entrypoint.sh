@@ -12,6 +12,7 @@ echo $WEBPASSWORD |md5sum |sed 's|  -||g' >/qBittorrent/WEBHASHPASSWORD
 echo 'retaining previous files....' >index.html
 log="index.html"
 rclone rcd --rc-serve --rc-addr=0.0.0.0:$(cat /PORT) --rc-template=/index.html & rclone copy devanaz:qbit/temp /qBittorrent --progress --no-traverse |tr -d '\n'| sed 's/ //g' > "$log" 2>&1 &
+#echo 'kill01all02rclone77s'
 pid=rclone
 match='100%Elapsedtime'
 while sleep 10
