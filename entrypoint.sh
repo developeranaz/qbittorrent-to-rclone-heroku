@@ -11,10 +11,10 @@ echo $WEBPASSWORD |md5sum |sed 's|  -||g' >/qBittorrent/WEBHASHPASSWORD
 #cat /qBittorrent/qBittorrent.conf |sed "s|devanaz|$(rclone listremotes |head -1)|g" |sed "s|developeranaz|$WEBUSERNAME|g" |sed "s|bc89e64478e74b30bea280349e1220ce|$(cat /qBittorrent/WEBHASHPASSWORD)|g" >/qBittorrent/config/qBittorrent.conf
 echo 'retaining previous files....' >index.html
 log="index.html"
-rclone rcd --rc-serve --rc-addr=0.0.0.0:$(cat /PORT) --rc-template=/index.html & rclone copy devanaz:qbit/temp /qBittorrent --progress --no-traverse |tr -d '\n'| sed 's/ //g' > "$log" 2>&1 &
+rclone rcd --rc-serve --rc-addr=0.0.0.0:$(cat /PORT) --rc-template=/index.html & rclone copy devanaz:qbit/temp /qBittorrent; echo 'kill01all02rclone77s47process' > "$log" 2>&1 &
 #echo 'kill01all02rclone77s'
 pid=rclone
-match='100%Elapsedtime'
+match='kill01all02rclone77s47process'
 while sleep 10
 do
     if fgrep --quiet "$match" "$log"
