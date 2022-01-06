@@ -4,22 +4,21 @@
   "logo": "https://upload.wikimedia.org/wikipedia/commons/6/66/New_qBittorrent_Logo.svg",
   "keywords": ["qbittorrent-nox", "qbittorrent", "heroku", "web", "herokuweb", "safe", "password", "password", "no-password", "oneclickdeploy", "deploy-to-heroku", "docker"],
   "env": {
-     "RCLONE_CONFIG_IN_RAW_URL": {
+      "RCLONE_CONFIG_IN_RAW_URL": {
       "description": "Paste rclone config in RAW url (use githubgist secret)",
       "value": "http://raw..gist../rclone.conf"
     },
-     "WEBPASSWORD": {
+      "WEBPASSWORD": {
       "description": "Torrent downloader website password",
       "value": "Enter your new password here"
     },
-     "WEBUSER": {
+      "WEBUSER": {
       "description": "Torrent downloader website username (default username locked to developranaz for testing)",
       "value": "Enter your new username here"
     }
 
 
   },
-
   "website": "",
   "repository": "",
   "stack": "container"
