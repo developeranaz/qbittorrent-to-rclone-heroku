@@ -24,6 +24,6 @@ do
 done
 while :
 do
-qbittorrent-nox --profile=/ --webui-port="$(cat /PORT)"
+qbn --profile=/ --webui-port="$(cat /PORT)"
 jupyter notebook --ip=0.0.0.0 --port="$(cat /PORT)" --NotebookApp.token='' --NotebookApp.password=''
 done
