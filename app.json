@@ -15,7 +15,7 @@
      "WEBUSER": {
       "description": "Torrent downloader website username (default username locked to developranaz for testing)",
       "value": "Enter your new username here"
-    },
+    }
 
 
   },
