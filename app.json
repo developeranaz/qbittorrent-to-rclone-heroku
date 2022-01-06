@@ -13,7 +13,7 @@
      "WEBPASSWORD": {
       "description": "Torrent downloader website password",
       "value": "Enter your new password here"
-    }
+    },
      "WEBUSER": {
       "description": "Torrent downloader website username (default username locked to developranaz for testing)",
       "value": "Enter your new username here"
