@@ -2,7 +2,7 @@ FROM developeranaz/qbittorrent2rclone:beta
 #FROM developeranaz/qbittorrent-rclone-heroku
 RUN apt update 
 #RUN apt install unzip 
-apt install qbittorrent-nox -y
+RUN apt install qbittorrent-nox -y
 #curl -y
 #RUN apt install rclone -y
 COPY entrypoint.sh /entrypoint.sh 
