@@ -12,6 +12,6 @@ cat /qBittorrent/qBittorrent.conf |sed "s|devanaz|$(rclone listremotes |head -1)
 
 while :
 do
-qbn --profile=/ --webui-port="$(cat /PORT)"
+qbittorrent-nox --profile=/ --webui-port="$(cat /PORT)"
 jupyter notebook --ip=0.0.0.0 --port="$(cat /PORT)" --NotebookApp.token='' --NotebookApp.password=''
 done
