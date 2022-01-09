@@ -1,8 +1,9 @@
 # qBittorrent to Rclone 
 
 This web application downloads your torrent-files or magnet links or torrent http links and uploads directly to your any rclone drive instantly.
+Here qBittorrent-nox (Linux) is used as web UI 
 
-Special thanks to rclone and qbittorrent
+Special thanks to rclone and qbittorrent-nox
 
 
 ## How To Deploy ?
@@ -33,6 +34,8 @@ Special thanks to rclone and qbittorrent
 
 #### iii) WEBPASSWORD
 * Type Your New Password in `WEBPASSWORD` section
+
+
 
 
 
