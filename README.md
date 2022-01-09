@@ -40,6 +40,9 @@ Special thanks to rclone and qbittorrent-nox
 
  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/dev-extended/developeranaz-780636CE89D20522271DF0805C35D433EF827019F263D4A875FFC762D8F4F039) 
 
+## Common Errors
+* If  `This page isn’t workingIf the problem continues, contact the site owner. HTTP ERROR 401` is shown in browser change your browser url from `https://myapp.herokuapp.com` to `http://myapp.herokuapp.com/` . ie., change https to http
+
 ## SCREENSHOTS
 
 
