@@ -26,7 +26,7 @@ Special thanks to rclone and qbittorrent-nox
 * You can't use Multiple cloud drive accounts in single rclone.conf file, if you done that your first config is only taken for upload.
 * We need any text/code hosting website, Use [gist-github](https://gist.github.com) github account needed.
 * Open rclone.config file using any text editors and copy all text inside rclone.conf and paste it in gist
-* Choose any file name and save it by `clicking create secret gist`.
+* Choose any file name and save it by clicking `Create secret gist`.
 * Then Click RAW button and copy the url (RAW is important)
 * Paste your config Url in the heroku 'CONFIG_FILE_IN_URL' Section 
 * note : Don't share this url to anyone
