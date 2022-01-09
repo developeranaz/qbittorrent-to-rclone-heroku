@@ -37,7 +37,9 @@ Special thanks to rclone and qbittorrent-nox
 #### iii) WEBPASSWORD
 * Type Your New Password in `WEBPASSWORD` section
 
+## SCREENSHOTS
 
+![demoo](https://raw.githubusercontent.com/developeranaz/qbittorrent-to-rclone-heroku-beta/main/demo/image.png)
 
 
 
