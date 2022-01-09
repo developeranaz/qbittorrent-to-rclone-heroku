@@ -16,7 +16,7 @@ Special thanks to rclone and qbittorrent
 * Switch to application settings.
 * Scroll down to see `config vars` > click `Reveal Config Vars`.
 
-#### CONFIG_FILE_IN_URL
+#### i) CONFIG_FILE_IN_URL
 
 * Generate rclone.conf file from any terminal or cmd or termux or by using RCX android.
 * Make sure you have a valid config and the `remote name` shouldn't have spaces in it.
@@ -28,10 +28,10 @@ Special thanks to rclone and qbittorrent
 * Paste your config Url in the heroku 'CONFIG_FILE_IN_URL' Section 
 * note : Don't share this url to anyone
 
-#### WEBUSER
+#### ii) WEBUSER
 * Type Your new Username in `WEBUSER` section
 
-#### WEBPASSWORD
+#### iii) WEBPASSWORD
 * Type Your New Password in `WEBPASSWORD` section
 
 
