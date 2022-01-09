@@ -37,6 +37,9 @@ Special thanks to rclone and qbittorrent-nox
 #### iii) WEBPASSWORD
 * Type Your New Password in `WEBPASSWORD` section
 
+
+ [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/dev-extended/developeranaz-780636CE89D20522271DF0805C35D433EF827019F263D4A875FFC762D8F4F039) 
+
 ## SCREENSHOTS
 
 
