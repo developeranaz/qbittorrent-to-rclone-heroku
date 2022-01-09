@@ -12,6 +12,10 @@ Special thanks to rclone and qbittorrent
 * Log in to Heroku in any browser
 * Click on the Rapid deployment button [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/dev-extended/developeranaz-780636CE89D20522271DF0805C35D433EF827019F263D4A875FFC762D8F4F039) and deploy app
 ### Step 2 (setting Config Vars)
+* Go to deployed application in heroku
+* Switch to application settings.
+* Scroll down to see `config vars` > click `Reveal Config Vars`.
+
 #### CONFIG_FILE_IN_URL
 
 * Generate rclone.conf file from any terminal or cmd or termux or by using RCX android.
@@ -25,6 +29,10 @@ Special thanks to rclone and qbittorrent
 * note : Don't share this url to anyone
 
 #### WEBUSER
-* Type your username 
+* Type Your new Username in `WEBUSER` section
 
 #### WEBPASSWORD
+* Type Your New Password in `WEBPASSWORD` section
+
+
+
