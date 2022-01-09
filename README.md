@@ -19,7 +19,7 @@ Special thanks to rclone and qbittorrent-nox
 * Switch to application settings.
 * Scroll down to see `config vars` > click `Reveal Config Vars`.
 
-#### i) CONFIG_FILE_IN_URL
+#### i) RCLONE_CONFIG_IN_RAW_URL
 
 * Generate rclone.conf file from any terminal or cmd or termux or by using RCX android.
 * Make sure you have a valid config and the `remote name` shouldn't have spaces in it. eg- `[devanaz]`
@@ -28,7 +28,7 @@ Special thanks to rclone and qbittorrent-nox
 * Open rclone.config file using any text editors and copy all text inside rclone.conf and paste it in gist
 * Choose any file name and save it by clicking `Create secret gist`.
 * Then Click RAW button and copy the url (RAW is important)
-* Paste your config Url in the heroku 'CONFIG_FILE_IN_URL' Section 
+* Paste your config Url in the heroku 'RCLONE_CONFIG_IN_RAW_URL' Section 
 * note : Don't share this url to anyone
 
 #### ii) WEBUSER
