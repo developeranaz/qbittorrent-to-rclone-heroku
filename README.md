@@ -13,7 +13,7 @@ Special thanks to rclone and qbittorrent-nox
 * Star my repository
 * Create a [Heroku](https://dashboard.heroku.com/login) Free account
 * Log in to Heroku in any browser
-* Click on the Rapid deployment button [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/dev-extended/developeranaz-780636CE89D20522271DF0805C35D433EF827019F263D4A875FFC762D8F4F039) and deploy app
+* Click on the Rapid deployment button [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://developeranaz.github.io/qbittorrent-to-rclone-heroku/random.html) and deploy app
 ### Step 2 (setting Config Vars)
 * Go to deployed application in heroku
 * Switch to application settings.
