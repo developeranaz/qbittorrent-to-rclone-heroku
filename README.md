@@ -37,6 +37,14 @@ Special thanks to rclone and qbittorrent-nox
 #### iii) WEBPASSWORD
 * Type Your New Password in `WEBPASSWORD` section
 
+#### iv) SELFPING (hidden config var)
+ This config var is hidden and can be activated by 
+* Go to deployed application in heroku
+* Switch to application settings.
+* Scroll down to see `config vars` > click `Reveal Config Vars`.
+* use key as `selfping` and corresponding value as `your-deployed-app-name` 
+* example image below 
+
 
  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://developeranaz.github.io/qbittorrent-to-rclone-heroku/random.html) 
 
