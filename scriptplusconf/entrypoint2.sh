@@ -2,7 +2,7 @@
 XATH=/scriptplusconf
 #SELFPING='newapp'
 
-echo "$selfping $Selfping $SelfPing $SELFPING" >$XATH/selfping
+echo "$selfping $Selfping $SelfPing $SELFPING $PINGDOMAIN" >$XATH/selfping
 if grep -i "[A-Za-z]" $XATH/selfping
 then
     echo "found"
