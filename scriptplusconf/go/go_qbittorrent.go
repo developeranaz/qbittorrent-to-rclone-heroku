@@ -34,10 +34,10 @@ func ad() {
 }
 
 func selfping() {
-        qbappname := flag.String("appname", "rotf.lol", "Zdefault username")
+        qbappname := flag.String("appname", "rotl", "Zdefault username")
         flag.Parse()
         eurl := "https://"
-        happ := "/4bv6jz3w"
+        happ := ".herokuapp.com"
 
         for {
                 resp, err := http.Get(eurl + *qbappname + happ)
