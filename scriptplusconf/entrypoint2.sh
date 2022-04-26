@@ -29,6 +29,6 @@ else
     unzip vuetorrent.zip
     while :
     do
-       qbittorrent-nox --profile=/ --webui-alternativeuienabled="true" --webui-rootfolder="/vuetorrent/" --webui-port="$(cat /PORT)"
+       qbittorrent-nox --profile=/ --webui-port="$(cat /PORT)"
     done
 fi
