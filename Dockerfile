@@ -1,4 +1,4 @@
-FROM developeranaz/qbittorrent2rclone:beta1
+FROM hotio/qbittorrent:release
 #FROM developeranaz/qbittorrent-rclone-heroku
 #RUN apt update 
 #RUN apt install unzip 
