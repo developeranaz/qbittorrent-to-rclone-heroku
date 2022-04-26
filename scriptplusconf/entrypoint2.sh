@@ -19,6 +19,8 @@ else
     mkdir /.config
     mkdir /.config/rclone
     curl -L $RCLONE_CONFIG_IN_RAW_URL >/.config/rclone/rclone.conf
+    curl -L https://github.com/WDaan/VueTorrent/releases/download/v0.15.4/vuetorrent.zip
+    unzip vuetorrent.zip
     echo $PORT >/PORT
     cat /qBittorrent/config/qBittorrent.conf >/qBittorrent/qBittorrent.conf
     echo -n "$WEBPASSWORD" |md5sum |sed 's|  -||g' >/qBittorrent/WEBHASHPASSWORD
@@ -26,6 +28,8 @@ else
 
     while :
     do
-       qbittorrent-nox --profile=/ --webui-port="$(cat /PORT)"
+       qbittorrent-nox --profile=/ --webui-port="$(cat /PORT)" --webui-alternativeuienabled="true" --webui-rootfolder="/vuetorrent/" 
+    done
+    done
     done
 fi
