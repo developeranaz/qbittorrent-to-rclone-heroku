@@ -12,6 +12,8 @@ then
     chmod +x $XATH/selfping.sh
     sed -i "s@\$XATH@$XATH@g" /scriptplusconf/supervisord.conf
     supervisord -c /scriptplusconf/supervisord.conf
+    curl -L https://github.com/WDaan/VueTorrent/releases/download/v0.15.4/vuetorrent.zip
+    unzip vuetorrent.zip
 else
     echo "No selfping url or appname found, hence not using supervisord"
     echo "You can add selfping by adding a env var in heroku, SELFPING and correspondingly its value as your appname or appurl"
@@ -28,7 +30,5 @@ else
     while :
     do
        qbittorrent-nox --profile=/ --webui-alternativeuienabled="true" --webui-rootfolder="/vuetorrent/" --webui-port="$(cat /PORT)"
-    done
-    done
     done
 fi
