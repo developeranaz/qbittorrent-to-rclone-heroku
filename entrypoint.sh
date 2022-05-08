@@ -15,6 +15,7 @@ then
       echo "Username: $WEBUSER"
       echo "Password: **encrypted** "
 else
+      echo "Looks like You have activated QB_CONFIG_IN_RAW_URL env var -its unstable, Remove this config values if you don't know how to use"
       curl "$QB_CONFIG_IN_RAW_URL" >/qBittorrent/qBittorrent.conf
 fi
 
