@@ -8,12 +8,12 @@
       "description": "Paste rclone config in RAW url (use githubgist secret)",
       "value": "http://raw..gist../rclone.conf"
     },
-      "WEBPASSWORD": {
+      "password": {
       "description": "Torrent downloader website password",
       "value": "Enter your new password here"
     },
-      "WEBUSER": {
-      "description": "Torrent downloader website username (default username locked to developranaz for testing)",
+      "username": {
+      "description": "Torrent downloader website username",
       "value": "Enter your new username here"
     }
 
