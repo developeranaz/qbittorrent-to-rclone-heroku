@@ -24,7 +24,7 @@ Special thanks to rclone and qbittorrent-nox
 
 * Generate rclone.conf file from any terminal or cmd or termux or by using RCX android.
 * Make sure you have a valid config and the `remote name` shouldn't have spaces in it. eg- `[devanaz]`
-* You can't use Multiple cloud drive accounts in single rclone.conf file, if you done that your first config is only taken for upload.
+* You can use Multiple cloud drive accounts in single rclone.conf file, if you done that your first config is only taken for upload and if you want to manually add your cloudname or remote name use `remote` config var and your curresponding value from config.
 * We need any text/code hosting website, Use [gist-github](https://gist.github.com) github account needed.
 * Open rclone.config file using any text editors and copy all text inside rclone.conf and paste it in gist
 * Choose any file name and save it by clicking `Create secret gist`.
@@ -33,27 +33,19 @@ Special thanks to rclone and qbittorrent-nox
 * note : Don't share this url to anyone
 
 #### ii) WEBUSER
-* Type Your new Username in `WEBUSER` section
+* Type Your new Username in `username` section
 
 #### iii) WEBPASSWORD
-* Type Your New Password in `WEBPASSWORD` section
+* Type Your New Password in `password` section
 
-##### iv) SELFPING (Optional hidden config var)
- This config var is hidden and can be activated by 
-* Go to deployed application in heroku
-* Switch to application settings.
-* Scroll down to see `config vars` > click `Reveal Config Vars`.
-* use key as `selfping` and corresponding value as `your-deployed-app-name` 
-* example [image here](https://raw.githubusercontent.com/developeranaz/qbittorrent-to-rclone-heroku/main/demo/-4962988908900100631_121.jpg)
-##### v) PINGDOMAIN (Optional hidden config var)
- This config var is hidden and can be activated by 
-* Use config var , key `PINGDOMAIN` and corresponding value `http://your.custom.domain.com`
-* example [image here](https://user-images.githubusercontent.com/71500526/160111418-220d1420-ac47-4c6d-8bc2-faf26457483b.jpg)
+#### iv) remote (Hidden config var)
+* Added a hidden config var `remote` and its value to manually override or change your desired rclone remote name from your given config.
 
  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://developeranaz.github.io/qbittorrent-to-rclone-heroku/random.html) 
 
 ## Common Errors
 * If  `This page isn’t workingIf the problem continues, contact the site owner. HTTP ERROR 401` is shown in browser change your browser url from `https://myapp.herokuapp.com` to `http://myapp.herokuapp.com/` . ie., change https to http
+* If showing Unauthorised Please Reload your webpage.
 
 ## SCREENSHOTS
 
@@ -61,5 +53,14 @@ Special thanks to rclone and qbittorrent-nox
 ![demoo](https://raw.githubusercontent.com/developeranaz/qbittorrent-to-rclone-heroku-beta/main/demo/Screenshot%202022-01-09%20181831.png)
 ![demoo](https://raw.githubusercontent.com/developeranaz/qbittorrent-to-rclone-heroku-beta/main/demo/image.png)
 
+## What's New
+* Added anti-ban for heroku.
+* Added a hidden config var `remote` to manually override or choose your desired remote name from config.
+* Upgraded to qBittorrent-nox `release-4.4.5_v2.0.7`
+
+## What's Removed
+
+* SELFPING
+* PINGDOMAIN
 
 
