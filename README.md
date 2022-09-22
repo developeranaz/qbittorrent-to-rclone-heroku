@@ -1,4 +1,7 @@
-# qBittorrent to Rclone 
+# added anti-ban 
+* rclone uploads replaced with a new download page.
+
+# qBittorrent 
 Heroku has set torrent reuploaders or URL reuploaders as a policy violating source code.Please use it at your own risk, your heroku account has a higher chance of being banned.
 
 This web application downloads your torrent-files or magnet links or torrent http links and uploads directly to your any rclone drive instantly.
