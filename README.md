@@ -1,5 +1,6 @@
 # added anti-ban 
 * rclone uploads replaced with a new download page.
+* for more runtime use [website-pinger](https://github.com/developeranaz/Website-Pinger) or any external pingers
 
 # qBittorrent 
 Heroku has set torrent reuploaders or URL reuploaders as a policy violating source code.Please use it at your own risk, your heroku account has a higher chance of being banned.
