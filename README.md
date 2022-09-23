@@ -1,6 +1,7 @@
 # added anti-ban 
 * rclone uploads replaced with a new download page.
 * for more runtime use [website-pinger](https://github.com/developeranaz/Website-Pinger) or any external pingers
+* VueTorrent web ui added
 
 # qBittorrent 
 Heroku has set torrent reuploaders or URL reuploaders as a policy violating source code.Please use it at your own risk, your heroku account has a higher chance of being banned.
@@ -11,6 +12,11 @@ Here qBittorrent-nox (Linux) is used as web UI And Rclone is used as Uploader wi
 Special thanks to rclone and qbittorrent-nox
 
 ![Demo](https://raw.githubusercontent.com/developeranaz/qbittorrent-to-rclone-heroku-beta/main/demo/Screenshot%202022-01-09%20180328.png)
+
+
+
+
+
 
 
 ## How To Deploy ?
@@ -24,17 +30,7 @@ Special thanks to rclone and qbittorrent-nox
 * Switch to application settings.
 * Scroll down to see `config vars` > click `Reveal Config Vars`.
 
-#### i) RCLONE_CONFIG_IN_RAW_URL
 
-* Generate rclone.conf file from any terminal or cmd or termux or by using RCX android.
-* Make sure you have a valid config and the `remote name` shouldn't have spaces in it. eg- `[devanaz]`
-* You can't use Multiple cloud drive accounts in single rclone.conf file, if you done that your first config is only taken for upload.
-* We need any text/code hosting website, Use [gist-github](https://gist.github.com) github account needed.
-* Open rclone.config file using any text editors and copy all text inside rclone.conf and paste it in gist
-* Choose any file name and save it by clicking `Create secret gist`.
-* Then Click RAW button and copy the url (RAW is important)
-* Paste your config Url in the heroku 'RCLONE_CONFIG_IN_RAW_URL' Section 
-* note : Don't share this url to anyone
 
 #### ii) WEBUSER
 * Type Your new Username in `WEBUSER` section
@@ -55,6 +51,25 @@ Special thanks to rclone and qbittorrent-nox
 * example [image here](https://user-images.githubusercontent.com/71500526/160111418-220d1420-ac47-4c6d-8bc2-faf26457483b.jpg)
 
  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://developeranaz.github.io/qbittorrent-to-rclone-heroku/random.html) 
+
+
+
+whats new
+
+
+## Added  VueTorrent (Optional hidden config var)
+ This config var is hidden and can be activated by 
+* Go to deployed application in heroku
+* Switch to application settings.
+* Scroll down to see `config vars` > click `Reveal Config Vars`.
+* Use `alternative_webui ` as key &  corresponding `true`  as value to activate vuetorrent
+
+```
+alternative_webui
+```
+
+
+![image](https://user-images.githubusercontent.com/71500526/191953225-9b590349-2b32-42c5-a5fd-ca9cd26edb45.png)
 
 ## Common Errors
 * If  `This page isn’t workingIf the problem continues, contact the site owner. HTTP ERROR 401` is shown in browser change your browser url from `https://myapp.herokuapp.com` to `http://myapp.herokuapp.com/` . ie., change https to http
