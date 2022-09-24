@@ -45,10 +45,7 @@ Special thanks to rclone and qbittorrent-nox
 * Scroll down to see `config vars` > click `Reveal Config Vars`.
 * use key as `selfping` and corresponding value as `your-deployed-app-name` 
 * example [image here](https://raw.githubusercontent.com/developeranaz/qbittorrent-to-rclone-heroku/main/demo/-4962988908900100631_121.jpg)
-##### v) PINGDOMAIN (Optional hidden config var)
- This config var is hidden and can be activated by 
-* Use config var , key `PINGDOMAIN` and corresponding value `http://your.custom.domain.com`
-* example [image here](https://user-images.githubusercontent.com/71500526/160111418-220d1420-ac47-4c6d-8bc2-faf26457483b.jpg)
+
 
  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://developeranaz.github.io/qbittorrent-to-rclone-heroku/random.html) 
 
