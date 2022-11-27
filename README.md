@@ -83,6 +83,7 @@ REQUIREMENTS:
 * A little knowledge about docker containers and their ports
 * https://docs.docker.com/reference/
 
+
 1. Run below command for installer file
 ```
 curl -L 'https://raw.githubusercontent.com/developeranaz/qbittorrent-to-rclone-heroku/main/docker_build_and_run_for_VPS.sh' >install.sh; chmod +x ./install.sh
@@ -92,3 +93,6 @@ curl -L 'https://raw.githubusercontent.com/developeranaz/qbittorrent-to-rclone-h
 ```
 ./install.sh -c 8081 -u newusername -p newpassword
 ```
+
+
+Tested using Google free cloudshell
