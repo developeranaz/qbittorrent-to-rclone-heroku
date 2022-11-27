@@ -2,7 +2,7 @@
 
 # Created by DevAnaZ
 # run example below
-# docker_build_via_VPS.sh -c 8080 -p newpassword -u newusername
+# docker_build_and_run_for_VPS.sh -c 8080 -p newpassword -u newusername
 
 
 while getopts ":u:p:c:" opt; do
