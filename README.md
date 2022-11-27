@@ -77,5 +77,15 @@ alternative_webui
 ![demoo](https://raw.githubusercontent.com/developeranaz/qbittorrent-to-rclone-heroku-beta/main/demo/Screenshot%202022-01-09%20181831.png)
 ![demoo](https://raw.githubusercontent.com/developeranaz/qbittorrent-to-rclone-heroku-beta/main/demo/image.png)
 
+## For VPS users (via Docker)
+REQUIREMENTS: `Docker` and `curl` must be installed in your VPS
 
+1. Run below command for installer file
+```
+curl -L 'https://raw.githubusercontent.com/developeranaz/qbittorrent-to-rclone-heroku/main/docker_build_and_run_for_VPS.sh' >install.sh; chmod +x ./install.sh
+```
 
+2. Run below command by replacing your own port username and password
+```
+./install.sh -c 8081 -u newusername -p newpassword
+```
