@@ -78,7 +78,10 @@ alternative_webui
 ![demoo](https://raw.githubusercontent.com/developeranaz/qbittorrent-to-rclone-heroku-beta/main/demo/image.png)
 
 ## For VPS users (via Docker)
-REQUIREMENTS: `Docker` and `curl` must be installed in your VPS
+REQUIREMENTS: 
+* `Docker` and `curl` must be installed in your VPS
+* A little knowledge about docker containers and their ports
+* https://docs.docker.com/reference/
 
 1. Run below command for installer file
 ```
